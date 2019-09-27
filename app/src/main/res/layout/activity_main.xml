@@ -5,4 +5,91 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="138dp">
+
+        <TextView
+            android:id="@+id/smEnterprisesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:text="SM ENTERPRISES"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smEnterprisesTextView"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:text="BROWSE CATALOGS"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <LinearLayout
+            android:id="@+id/productsCatalog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/description2"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/sparsh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_margin="30dp"
+                    app:srcCompat="@drawable/sparsh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sparsh Masala"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#000"
+                    android:textSize="22sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="VVD Products"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:textSize="22sp"/>
+            <ImageView
+                android:id="@+id/vvd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/vvd"
+                android:scaleType="fitXY"
+                android:layout_margin="30dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
